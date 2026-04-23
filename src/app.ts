@@ -29,3 +29,6 @@ mongoose
   .catch((err) => console.log("MongoDB Connection Error:", err));
 
 export default app; 
+import carRoutes from "./routes/carRoutes";
+
+app.use("/api", carRoutes);
