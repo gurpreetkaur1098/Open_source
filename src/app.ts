@@ -35,3 +35,9 @@ app.use("/api", carRoutes);
 import bookingRoutes from "./routes/bookingRoutes";
 
 app.use("/api", bookingRoutes);
+import adminRoutes from "./routes/adminRoutes";
+
+app.use("/api", adminRoutes);
+import { logger } from "./middleware/logger";
+
+app.use(logger);
