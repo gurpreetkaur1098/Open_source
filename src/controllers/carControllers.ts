@@ -18,3 +18,8 @@ export const addCar = async (req: Request, res: Response) => {
     res.status(500).json({ message: "Error adding car" });
   }
 };
+// controller
+export const getCars = async (req: Request, res: Response) => {
+  const cars = await Car.find({ available: true });
+  res.json(cars);
+};

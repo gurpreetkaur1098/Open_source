@@ -1,5 +1,6 @@
 import { authMiddleware } from "../middleware/authMiddleware";
-
+// route
+router.get("/cars", getCars);
 router.get("/protected", authMiddleware, (req, res) => {
   res.json({ message: "Access granted" });
 });

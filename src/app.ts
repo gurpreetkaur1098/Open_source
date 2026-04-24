@@ -32,3 +32,6 @@ export default app;
 import carRoutes from "./routes/carRoutes";
 
 app.use("/api", carRoutes);
+import bookingRoutes from "./routes/bookingRoutes";
+
+app.use("/api", bookingRoutes);
